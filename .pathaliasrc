@@ -1,0 +1,14 @@
+{
+  "@": "${cwd}/src",
+  "api": "${cwd}/src/api",
+  "assets": "${cwd}/src/assets",
+  "components": "${cwd}/src/components",
+  "plugins": "${cwd}/src/plugins",
+  "store": "${cwd}/src/store",
+  "utils": "${cwd}/src/utils",
+  "views": "${cwd}/src/views",
+  "rootAssets": "${cwd}/../../Plugins/src/assets",
+  "rootConstants": "${cwd}/../../Plugins/src/constants",
+  "rootPlugins": "${cwd}/../../Plugins/src/plugins",
+  "rootUtils": "${cwd}/../../Plugins/src/utils"
+}
