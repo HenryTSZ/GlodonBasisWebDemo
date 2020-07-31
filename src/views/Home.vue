@@ -1,7 +1,7 @@
 <template>
   <Page>
     <template slot="title">
-      title
+      replaceProjectTitle
     </template>
     content
   </Page>
