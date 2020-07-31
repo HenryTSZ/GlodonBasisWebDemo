@@ -4,7 +4,6 @@
       title
     </template>
     content
-    <no-data></no-data>
   </Page>
 </template>
 

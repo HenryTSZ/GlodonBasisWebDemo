@@ -3,6 +3,7 @@
   "api": "${cwd}/src/api",
   "assets": "${cwd}/src/assets",
   "components": "${cwd}/src/components",
+  "mixins": "${cwd}/src/mixins",
   "plugins": "${cwd}/src/plugins",
   "store": "${cwd}/src/store",
   "utils": "${cwd}/src/utils",

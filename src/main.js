@@ -10,13 +10,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI, { size: 'small' })
 
 import Page from 'rootPlugins/Page'
-import NoData from 'rootPlugins/NoData'
-
-const plugins = [Page, NoData]
-
-plugins.forEach(item => {
-  Vue.component(item.name, item)
-})
+Vue.component(Page.name, Page)
 
 import 'rootAssets/iconfont/iconfont.css'
 import 'rootAssets/reset.css'

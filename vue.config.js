@@ -3,8 +3,7 @@ module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
 
   // 将构建好的文件输出到哪里
-  // TODO 需要修改成自己项目打包后的目录
-  outputDir: '../../../resources/web/Demo',
+  outputDir: '../../../resources/web/replaceOutputDir',
 
   // 是否在保存的时候使用 `eslint-loader` 进行检查。
   lintOnSave: process.env.NODE_ENV !== 'production',
@@ -19,6 +18,7 @@ module.exports = {
           api: '@/api',
           assets: '@/assets',
           components: '@/components',
+          mixins: '@/mixins',
           plugins: '@/plugins',
           store: '@/store',
           utils: '@/utils',
