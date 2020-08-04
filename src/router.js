@@ -9,7 +9,8 @@ export default new Router({
     {
       path: '/:projectId/Home',
       name: 'home',
-      component: Home
+      component: Home,
+      props: true
     }
   ]
 })

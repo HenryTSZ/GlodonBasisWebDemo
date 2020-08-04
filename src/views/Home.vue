@@ -11,11 +11,11 @@
 export default {
   name: 'Home',
   components: {},
-  props: {},
+  props: {
+    projectId: { type: String, default: '' }
+  },
   data() {
-    return {
-      projectId: this.$route.params.projectId
-    }
+    return {}
   },
   computed: {},
   watch: {},
