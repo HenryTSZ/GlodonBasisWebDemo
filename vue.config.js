@@ -43,7 +43,7 @@ module.exports = {
     https: false,
     proxy: {
       '/api': {
-        target: 'https://xmgl-text.glodon.com',
+        target: 'https://xmgl-test.glodon.com',
         changeOrigin: true
       }
     },
