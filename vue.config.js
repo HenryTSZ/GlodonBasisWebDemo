@@ -1,12 +1,14 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
   // 项目部署的基础路径
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  publicPath: isProd,
 
   // 将构建好的文件输出到哪里
   outputDir: '../../../resources/web/replaceOutputDir',
 
   // 是否在保存的时候使用 `eslint-loader` 进行检查。
-  lintOnSave: process.env.NODE_ENV !== 'production',
+  lintOnSave: !isProd,
 
   // 是否为生产环境构建生成 source map？
   productionSourceMap: false,
