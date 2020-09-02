@@ -45,7 +45,7 @@ module.exports = {
     https: false,
     proxy: {
       '/api': {
-        target: 'http://bim-test.glodon.com',
+        target: 'https://xmgl-test.glodon.com',
         changeOrigin: true
       }
     },
