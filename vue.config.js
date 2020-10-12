@@ -40,7 +40,7 @@ module.exports = {
     hot: true,
     hotOnly: false,
     open: true,
-    openPage: '#/315116722885120/Home',
+    openPage: '#/replaceOpenPage/Home',
     port: 8080,
     https: false,
     proxy: {
