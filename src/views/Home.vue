@@ -11,9 +11,7 @@
 export default {
   name: 'Home',
   components: {},
-  props: {
-    projectId: { type: String, default: '' }
-  },
+  props: replaceRouteProps,
   data() {
     return {}
   },
