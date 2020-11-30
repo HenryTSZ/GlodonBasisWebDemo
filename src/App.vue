@@ -5,16 +5,15 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mutations } from 'store'
 export default {
   name: 'App',
-  methods: mapMutations(['setBodyWidth', 'setBodyHeight']),
   mounted() {
-    this.setBodyWidth(document.body.clientWidth)
-    this.setBodyHeight(document.body.clientHeight)
+    mutations.setBodyWidth(document.body.clientWidth)
+    mutations.setBodyHeight(document.body.clientHeight)
     window.onresize = () => {
-      this.setBodyWidth(document.body.clientWidth)
-      this.setBodyHeight(document.body.clientHeight)
+      mutations.setBodyWidth(document.body.clientWidth)
+      mutations.setBodyHeight(document.body.clientHeight)
     }
   }
 }

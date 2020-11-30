@@ -1,20 +1,17 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
-  state: {
-    bodyWidth: 0,
-    bodyHeight: 0
-  },
-  mutations: {
-    setBodyWidth(state, value) {
-      state.bodyWidth = value
-    },
-    setBodyHeight(state, value) {
-      state.bodyHeight = value
-    }
-  },
-  actions: {}
+// 通过 Vue.observable 创建一个可响应的对象
+export const store = Vue.observable({
+  bodyWidth: 0,
+  bodyHeight: 0
 })
+
+// 定义 mutations 修改属性
+export const mutations = {
+  setBodyWidth(value) {
+    store.bodyWidth = value
+  },
+  setBodyHeight(value) {
+    store.bodyHeight = value
+  }
+}
