@@ -57,7 +57,7 @@ module.exports = {
       https: false,
       proxy: {
         '/api': {
-          target: 'http://bim-test.glodon.com',
+          target: 'https://aecloud-test.glodon.com',
           changeOrigin: true
         }
       },
